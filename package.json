@@ -1,6 +1,6 @@
 {
   "name": "ironmanjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bringing ironman mode to JavaScript",
   "main": "index.js",
   "scripts": {
