@@ -1,0 +1,23 @@
+{
+  "name": "ironmanjs",
+  "version": "1.0.0",
+  "description": "Bringing ironman mode to JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miningape/IronmanJS.git"
+  },
+  "keywords": [
+    "ironman",
+    "javascript"
+  ],
+  "author": "Kyle Johnson <miningape@gmail.com>",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/miningape/IronmanJS/issues"
+  },
+  "homepage": "https://github.com/miningape/IronmanJS#readme"
+}
