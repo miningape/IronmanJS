@@ -1,6 +1,8 @@
 // License at bottom of file, because who wants to start by reading a license?
 const fs = require('fs');
 
+let startCb = () => {};
+
 const whitelist = process.env.IRONMANJS_WHITELIST?.split(',') || [];
 whitelist.push('ironmanjs');
 const whitelistMap = whitelist.reduce((prev, cur) => { prev[cur] = true; return prev; }, {});
@@ -22,9 +24,14 @@ fs.readFile('package.json', (err, data) => {
         
 
         throw new Error('IronmanJS - Too Many Packages');
-    }     
+    }
+
+    startCb();
 });
 
+module.exports = (cb) => {
+    startCb = cb;
+}
 
 /*
  * ----------------------------------------------------------------------------
