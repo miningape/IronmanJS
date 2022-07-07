@@ -1,7 +1,7 @@
 {
   "name": "ironmanjs",
-  "version": "1.0.2",
-  "description": "Bringing ironman mode to JavaScript",
+  "version": "1.0.3",
+  "description": "Bringing ironman mode to JavaScript - JavaScript without the bloat",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

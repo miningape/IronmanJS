@@ -2,7 +2,7 @@
 Bringing Ironman mode to JavaScript - JavaScript without packages.
 
 
-Do you think that JavaScript has too many packages? Do you wish JavaScript was that little bit more challenging? Do you want to ensure you have absolutely no dependencies? If you answered `yes` to any of these questions then IronmanJS is for you.
+Do you think that JavaScript has too many packages? Do you wish JavaScript was that little bit more challenging? Are you looking for a challenge? Do you want to ensure you have absolutely no dependencies? Or are you just old school? If you answered `yes` to any of these questions then IronmanJS is for you.
 
 
 This simple (yet effective) package prevents any other packages from being installed in your codebase. It does so by scanning `package.json` for any (and all) dependencies, if it detects any additional dependencies it throws an error.
@@ -22,13 +22,14 @@ function main() {
 require('ironmanjs')(main);
 ```
 
-This is necessary because `fs.readFile` takes longer to execute than simple JavaScript, for example the following code will result in `"Hello World!"` being printed before the `ironmanjs` error is thrown.
+# Caveats
+The callback is necessary because reading a file takes longer to execute than simple JavaScript, for example the following code will result in `"Hello World!"` being printed before the `ironmanjs` error is thrown.
 ```javascript
 require('ironmanjs');
 console.log('Hello World!');
 ```
 
-For this reason it is not recommended to call the default export after the require statement, because then it becomes much harder to predict the order of execution and therefore if the callback will be called, for example in cases like this.
+For this reason it is not recommended to call the default export after the require statement, because then it becomes much harder to predict the order of execution and therefore if the callback will be called, for example in cases like this:
 ```javascript
 const setcb = require('ironmanjs');
 
