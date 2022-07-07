@@ -1,14 +1,14 @@
 # IronmanJS
-Bringing Ironman mode to JavaScript - JavaScript without packages.
+Bringing Ironman mode to JavaScript - JavaScript without bloat.
 
 
-Do you think that JavaScript has too many packages? Do you wish JavaScript was that little bit more challenging? Are you looking for a challenge? Do you want to ensure you have absolutely no dependencies? Or are you just old school? If you answered `yes` to any of these questions then IronmanJS is for you.
+Do you think that JavaScript has too many packages? Are you looking for a challenge? Do you want to ensure you have absolutely no dependencies? Do you want bragging rights? Or are you just old school? If you answered `yes` to any of these questions then IronmanJS is for you.
 
 
 This simple (yet effective) package prevents any other packages from being installed in your codebase. It does so by scanning `package.json` for any (and all) dependencies, if it detects any additional dependencies it throws an error.
 
 # Usage
-Using IronmanJS is simple and easy, simply include this single line at the beginning of any file that is used in your code (we recommend your app's entrypoint):
+Using IronmanJS is simple and easy, simply include this single line at the beginning of any one file that is used in your app (I recommend your app's entrypoint):
 ```javascript
 require('ironmanjs');
 ```
@@ -63,3 +63,5 @@ require('ironmanjs')(() => {
 ```
 
 I recommend using the `require` function over `import` statements for both the `dotenv` package and the `ironmanjs` package, this is because it is more predictable than the corresponding `import` statements. However, this is only in the case of `ironmanjs` and `dotenv` you are then free to use whatever syntax for the rest of your imports.
+
+Of course it goes without saying, if you use this feature you are no longer using ironman JavaScript, and you immediately lose all bragging rights.

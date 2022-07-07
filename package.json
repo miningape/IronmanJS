@@ -1,6 +1,6 @@
 {
   "name": "ironmanjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bringing ironman mode to JavaScript - JavaScript without the bloat",
   "main": "index.js",
   "scripts": {
