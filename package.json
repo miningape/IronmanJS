@@ -1,6 +1,6 @@
 {
   "name": "ironmanjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Bringing ironman mode to JavaScript - JavaScript without the bloat",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "ironman",
-    "javascript"
+    "javascript",
+    "bragging rights"
   ],
   "author": "Kyle Johnson <miningape@gmail.com>",
   "license": "Beerware",
